@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>课程Word转换工具v0.0.2</title>
+    <meta charset="utf-8">
+    <style>
+        .textarea {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 33%;
+            float: left;
+            border: 1px gray solid;
+            /*height: 107px;*/
+            overflow-x: auto;
+            overflow-y: hidden;
+            /*font-size: 13px !important;*/
+        }
+    </style>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./engine.js"></script>
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+</head>
+
+<body>
+<div>
+    <textarea rows="6" class="textarea katex" wrap="off" id="text"></textarea>
+    <textarea rows="6" class="textarea katex" wrap="off" id="newText" onmouseover='this.focus()' onfocus='this.select()'
+          readonly="readonly"></textarea>
+    <div class="textarea" id="KaTeX"></div>
+</div>
+将鼠标移动到右侧区域然后Ctrl+C复制<br><br><br>
+<div id="error" style="color:red; font-weight:900;"></div>
+<div style="color:red; font-size:12px;">
+    本工具仅供个人学习和娱乐，请不要过度依赖，由于本工具导致的任何后果使用者自负~~<br>
+    本工具不在技术部维护义务范围内，有意见和建议可以<a href="mailto:danyang@guanghe.tv?subject=关于课程Word转换工具">和我说</a>，但做不做、什么时候做就看我心情啦~~<br>
+    Word文档要是没有标准化的话这个工具没有任何维护的意义。。。
+</div>
+</body>
+</html>
